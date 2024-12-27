@@ -3,7 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="author" content="Lily Lopez" />
+    <meta name="description" content="Around the US" />
+    <meta
+      name="keywords"
+      content="diseño web,pagina web, desarrolladores, tripleten"
+    />
+    <title>Around the US</title>
+    <link rel="stylesheet" href="./pages/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/Vector.svg"
+          alt="Around-the-us"
+          class="header__logo"
+        />
+        <img src="./images/Line.svg" alt="line" class="header__logo-line" />
+      </header>
+      <section class="profile">
+        <img
+          src="./images/Lily.jpeg"
+          alt="foto-de-perfil"
+          class="profile__photo"
+        />
+        <div class="profile__info">
+          <h2 class="profile__name">Liliana G. López</h2>
+          <p class="profile__paragraph">Estudiante</p>
+          <button class="edit-button" id="editProfile">
+            <img src="./images/pencil_c88u0r31k2xr.svg" alt="pencil-edit" />
+          </button>
+        </div>
+        <button class="add-button" id="addProfile">
+          <img src="./images/plus_icon.svg" alt="plus-icon" class="plus-icon" />
+        </button>
+      </section>
+
+      <main class="gallery" id="gallery">
+        <div class="card">
+          <img
+            src="./images/golden-gate-bridge.jpg"
+            alt="golden-gate"
+            class="card__photo"
+          />
+          <div class="card__footer">
+            <span>San Francisco</span>
+            <button class="like-button">&#9825;</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/lake-tahoe-ca.jpg"
+            alt="lake-tahoe-ca"
+            class="card__photo"
+          />
+          <div class="card__footer">
+            <span>Lake Tahoe</span>
+            <button class="like-button">&#9825;</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="./images/down-town-chicago.jpg"
+            alt="down-town-chicago"
+            class="card__photo"
+          />
+          <div class="card__footer">
+            <span>Chicago</span>
+            <button class="like-button">&#9825;</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="./images/yellowstone-montana.jpg"
+            alt="yellowstone-montana"
+            class="card__photo"
+          />
+          <div class="card__footer">
+            <span>Yellostone</span>
+            <button class="like-button">&#9825;</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/florida.jpg" alt="florida" class="card__photo" />
+          <div class="card__footer">
+            <span>Florida</span>
+            <button class="like-button" id="likeButton">&#9825;</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="./images/phoenix-mountains.jpg"
+            alt="phoenix-mountains"
+            class="card__photo"
+          />
+          <div class="card__footer">
+            <span>Phoenix</span>
+            <button class="like-button">&#9825;</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">&copy; 2024 Around The U.S.</footer>
+
+      <div class="popup" id="popup">
+        <div class="popup__container">
+          <button class="popup__close" id="closePopup">
+            <img
+              src="./images/Close-Icon.svg"
+              alt="close-icon"
+              class="popup__close-icon"
+            />
+          </button>
+          <h2 class="popup__title">Editar perfil</h2>
+          <form class="popup__form" id="editProfileForm">
+            <input type="text" id="nameInput" placeholder="Nombre" />
+            <img src="./images/Line 2.svg" alt="line" class="line" />
+            <input type="text" id="aboutInput" placeholder="Acerca de mí" />
+            <img src="./images/Line 2.svg" alt="line" class="line" />
+            <button type="button" id="saveProfile">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

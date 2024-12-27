@@ -1,0 +1,8 @@
+.page {
+  max-width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 780px) {
+}
