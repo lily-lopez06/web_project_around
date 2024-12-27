@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 170px 200px 145px 200px;
+  margin: 120px 200px 145px 130px;
   row-gap: 17px;
 }
 
@@ -42,7 +42,7 @@
     height: 2266px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 400px 19px 0 19px;
+    margin: 250px 19px 0 19px;
   }
 
   .card__photo {

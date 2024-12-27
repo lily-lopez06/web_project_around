@@ -7,7 +7,7 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin: 40px 0 0 200px;
+  margin: 40px 0 0 130px;
 }
 
 .profile__name {
@@ -16,23 +16,23 @@
   font-family: "inter-regular";
   font-size: 42px;
   color: #ffff;
-  margin: -94px 515px 0 350px;
+  margin: -94px 515px 0 270px;
 }
 
 .profile__paragraph {
   font-family: "inter-regular";
   font-size: 18px;
   color: #ffff;
-  margin: -24px 515px 0 350px;
+  margin: -24px 515px 0 270px;
 }
 
 .edit-button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: black;
   position: absolute;
-  bottom: 293px;
-  left: 690px;
+  top: 200px;
+  left: 590px;
   border: none;
   cursor: pointer;
 }
@@ -42,9 +42,9 @@
   height: 50px;
   border-color: #ffff;
   background-color: black;
-  margin: -300px 200px 0 920px;
   position: absolute;
-  bottom: 290px;
+  right: 200px;
+  top: 200px;
   cursor: pointer;
 }
 
@@ -60,7 +60,7 @@
   }
 
   .profile__photo {
-    margin: 92px 100px 0 100px;
+    margin: 20px 100px 0 100px;
   }
 
   .profile__name {
@@ -80,8 +80,8 @@
   .edit-button {
     margin: auto;
     position: absolute;
-    top: 435px;
-    left: 250px;
+    top: 355px;
+    left: 245px;
   }
 
   .add-button {
@@ -89,7 +89,7 @@
     height: 50px;
     margin: auto;
     position: absolute;
-    top: 600px;
+    top: 450px;
     left: 19px;
   }
 }
