@@ -1,21 +1,40 @@
+.header {
+  max-width: 880px;
+}
+
 .header__logo {
-  margin: 45px 100px 0 130px;
+  width: 280px;
+  height: 33px;
+  margin: 45px 0 0 200px;
 }
 
 .header__logo-line {
-  margin: 41px 100px 0 130px;
+  width: 880px;
+  margin: 41px 0 0 200px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 780px) {
+@media screen and (min-width: 320px) and (max-width: 584px) {
   .header__logo {
-    width: 228px;
+    max-width: 320px;
     height: 56px;
     margin: 28px 19px 0 19px;
   }
 
   .header__logo-line {
-    width: 280px;
-    height: 56px;
-    margin: 28px 19px 0 19px;
+    max-width: 280px;
+    height: 2px;
+    margin: 20px 19px 0 19px;
+  }
+}
+
+@media screen and (min-width: 584px) and (max-width: 768px) {
+  .header__logo {
+    max-width: 500px;
+    margin: 20px 0 0 20px;
+  }
+
+  .header__logo-line {
+    max-width: 720px;
+    margin: 10px 0 0 20px;
   }
 }
