@@ -5,19 +5,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: black(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.popup_opened {
-  display: flex;
-}
 .popup__container {
   width: 430px;
   height: 330px;
   background-color: #fff;
   border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
 }
 
 .popup__close {
@@ -27,13 +28,14 @@
   background-color: black;
   border: none;
   position: absolute;
-  top: 70px;
+  top: -30px;
   cursor: pointer;
 }
 .popup__title {
   margin-left: 37px;
   font-family: "inter-black";
   font-size: 24px;
+  padding-top: 20px;
 }
 
 .popup__form {
@@ -68,7 +70,6 @@
 }
 
 .popup__form button:hover {
-  color: #fff;
   background-color: black;
 }
 

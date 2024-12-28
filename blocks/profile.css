@@ -7,7 +7,7 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin: 40px 0 0 200px;
+  margin: 40px 0 0 75px;
   object-fit: cover;
 }
 
@@ -16,24 +16,27 @@
   height: 77px;
   font-family: "inter-regular";
   font-size: 42px;
+  font-weight: 500px;
   color: #ffff;
-  margin: -94px 515px 0 340px;
+  margin: -94px 515px 0 220px;
 }
 
 .profile__paragraph {
+  width: 415px;
   font-family: "inter-regular";
   font-size: 18px;
+  font-weight: 400px;
   color: #ffff;
-  margin: -24px 515px 0 340px;
+  margin: -24px 515px 0 225px;
 }
 
 .edit-button {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: black;
   position: absolute;
-  top: 200px;
-  left: 710px;
+  top: 210px;
+  left: 650px;
   box-sizing: 1px;
   border-color: #ffff;
   cursor: pointer;
@@ -48,7 +51,7 @@
   border-color: #ffff;
   background-color: black;
   position: absolute;
-  right: 300px;
+  right: 110px;
   top: 200px;
   cursor: pointer;
 }
@@ -65,7 +68,7 @@
   }
 
   .profile__photo {
-    margin: 20px 0 0 130px;
+    margin: 20px 0 0 110px;
     object-fit: cover;
   }
 
@@ -73,22 +76,22 @@
     width: 224px;
     height: 22px;
     font-size: 20px;
-    margin: 30px 0px 0 90px;
+    margin: 30px 0px 0 95px;
   }
 
   .profile__paragraph {
     width: 282px;
     height: 14px;
-    margin: 14px 0 0 150px;
+    margin: 14px 0 0 130px;
     font-size: 14px;
   }
 
   .edit-button {
+    width: 35px;
+    height: 35px;
     position: absolute;
-    top: 290px;
+    top: 275px;
     left: 270px;
-    width: 20px;
-    height: 20px;
   }
 
   .pencil-edit {
@@ -102,17 +105,17 @@
     margin: auto;
     position: absolute;
     top: 390px;
-    left: 35px;
+    left: 25px;
   }
 }
 
-@media screen and (min-width: 584px) and (max-width: 768px) {
+@media screen and (min-width: 584px) and (max-width: 880px) {
   .profile {
     max-width: 768px;
   }
 
   .profile__photo {
-    margin: 30px 0 0 45px;
+    margin: 30px 0 0 145px;
     object-fit: cover;
   }
 
@@ -120,19 +123,19 @@
     width: 250px;
     height: 22px;
     font-size: 30px;
-    margin: -100px 0px 0 190px;
+    margin: -90px 0px 0 290px;
   }
 
   .profile__paragraph {
-    margin: 10px 0px 0 190px;
+    margin: 10px 0px 0 290px;
   }
 
   .edit-button {
     position: absolute;
-    top: 145px;
-    left: 450px;
-    width: 40px;
-    height: 40px;
+    top: 160px;
+    left: 550px;
+    width: 20px;
+    height: 20px;
   }
 
   .pencil-edit {
@@ -143,7 +146,7 @@
   .add-button {
     width: 230px;
     position: absolute;
-    top: 230px;
-    left: 170px;
+    top: 250px;
+    left: 290px;
   }
 }

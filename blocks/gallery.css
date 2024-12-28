@@ -3,8 +3,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 120px 200px 145px 200px;
+  margin: 100px 0 0 80px;
   row-gap: 17px;
+}
+
+.block {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__photo {
@@ -33,7 +39,7 @@
 }
 
 .liked {
-  color: red;
+  color: black;
 }
 
 @media screen and (min-width: 320px) and (max-width: 584px) {
@@ -42,7 +48,7 @@
     height: 260px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 240px 10px 0 35px;
+    margin: 240px 10px 0 25px;
   }
 
   .card__photo {
@@ -55,15 +61,15 @@
   }
 }
 
-@media screen and (min-width: 584px) and (max-width: 768px) {
+@media screen and (min-width: 584px) and (max-width: 880px) {
   .gallery {
     width: 220px;
-    height: 228px;
+    height: 800px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    margin: 130px 0px 0 45px;
+    margin: 130px 0px 0 170px;
   }
 
   .card__photo {
