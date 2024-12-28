@@ -42,7 +42,7 @@
     height: 2266px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 300px 19px 0 20px;
+    margin: 300px 19px 0 35px;
   }
 
   .card__photo {
@@ -60,10 +60,10 @@
     width: 220px;
     height: 228px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    margin: 100px 0px 0 45px;
+    margin: 130px 0px 0 45px;
   }
 
   .card__photo {
