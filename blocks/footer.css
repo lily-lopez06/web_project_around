@@ -2,18 +2,18 @@
   color: #545454;
   font-family: "inter-regular";
   font-size: 18px;
-  margin: 67px 0 0 70px;
-  padding-bottom: 67px;
+  margin: 67px 0 0 200px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 584px) {
   .footer {
-    margin: 1950px 20px 0 30px;
+    margin: 50px 19px 0 19px;
   }
 }
 
 @media screen and (min-width: 584px) and (max-width: 880px) {
   .footer {
-    margin: 100px 50px 0 155px;
+    margin: 70px 50px 0 10px;
   }
 }

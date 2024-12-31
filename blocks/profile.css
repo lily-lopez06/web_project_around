@@ -1,49 +1,51 @@
 .profile {
   max-width: 880px;
   max-height: 120px;
+  padding: 40px 200px 50px 200px;
 }
 
 .profile__photo {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin: 40px 0 0 75px;
+  margin: -160px 760px 0 0;
   object-fit: cover;
 }
 
 .profile__name {
-  width: 415px;
-  height: 77px;
+  width: 373px;
+  height: 39px;
   font-family: "inter-regular";
   font-size: 42px;
   font-weight: 500px;
   color: #ffff;
-  margin: -94px 515px 0 220px;
+  margin: 62px 0 0 140px;
 }
 
 .profile__paragraph {
   width: 415px;
+  height: 22px;
   font-family: "inter-regular";
   font-size: 18px;
   font-weight: 400px;
   color: #ffff;
-  margin: -24px 515px 0 225px;
+  margin: 16px 515px 0 140px;
 }
 
 .edit-button {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   background-color: black;
   position: absolute;
-  top: 210px;
-  left: 650px;
+  top: 236px;
+  left: 731px;
   box-sizing: 1px;
   border-color: #ffff;
   cursor: pointer;
 }
 .pencil-edit {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
 }
 .add-button {
   width: 150px;
@@ -51,8 +53,9 @@
   border-color: #ffff;
   background-color: black;
   position: absolute;
-  right: 110px;
-  top: 200px;
+  top: 236px;
+  left: 930px;
+
   cursor: pointer;
 }
 
@@ -65,38 +68,39 @@
   .profile {
     width: 282px;
     height: 282px;
+    padding: 42px 19px 0 19px;
   }
 
   .profile__photo {
-    margin: 20px 0 0 110px;
-    object-fit: cover;
+    position: absolute;
+    bottom: 140px;
+    left: 100px;
   }
 
   .profile__name {
     width: 224px;
     height: 22px;
-    font-size: 20px;
-    margin: 30px 0px 0 95px;
+    font-size: 22px;
+    margin: 150px 48px 0 28px;
   }
 
   .profile__paragraph {
     width: 282px;
     height: 14px;
-    margin: 14px 0 0 130px;
+    margin: 14px 29px 0 100px;
     font-size: 14px;
   }
 
   .edit-button {
-    width: 35px;
-    height: 35px;
+    width: 18px;
+    height: 18px;
     position: absolute;
-    top: 275px;
-    left: 270px;
+    top: 278px;
+    left: 255px;
   }
 
   .pencil-edit {
-    width: 10px;
-    height: 10px;
+    width: 6px;
   }
 
   .add-button {
@@ -105,35 +109,39 @@
     margin: auto;
     position: absolute;
     top: 390px;
-    left: 25px;
+    left: 20px;
   }
 }
 
 @media screen and (min-width: 584px) and (max-width: 880px) {
   .profile {
-    max-width: 768px;
+    max-width: 720px;
+    padding: 0;
+    margin-left: 10px;
   }
 
   .profile__photo {
-    margin: 30px 0 0 145px;
-    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
   }
 
   .profile__name {
-    width: 250px;
+    width: 720px;
     height: 22px;
-    font-size: 30px;
-    margin: -90px 0px 0 290px;
+    font-size: 40px;
+    margin: 150px 0px 0 190px;
   }
 
   .profile__paragraph {
-    margin: 10px 0px 0 290px;
+    margin: 30px 0px 0 195px;
   }
 
   .edit-button {
     position: absolute;
-    top: 160px;
-    left: 550px;
+    top: 260px;
+    left: 570px;
     width: 20px;
     height: 20px;
   }
@@ -144,9 +152,9 @@
   }
 
   .add-button {
-    width: 230px;
+    width: 170px;
     position: absolute;
-    top: 250px;
-    left: 290px;
+    top: 255px;
+    left: 690px;
   }
 }

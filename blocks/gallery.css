@@ -1,10 +1,12 @@
 .gallery {
   width: 865px;
+  height: 743px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 100px 0 0 80px;
+  padding: 50px 200px 0 200px;
   row-gap: 17px;
+  column-gap: 20px;
 }
 
 .block {
@@ -14,20 +16,21 @@
 }
 
 .card__photo {
-  width: 270px;
-  height: 270px;
+  width: 282px;
+  height: 282px;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 .card__footer {
-  width: 270px;
-  height: 52px;
+  width: 282px;
+  height: 79px;
   background-color: #ffff;
   margin-top: -4px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-family: "inter-black";
+  font-size: 24px;
   border-radius: 0 0 5px 5px;
 }
 
@@ -45,10 +48,11 @@
 @media screen and (min-width: 320px) and (max-width: 584px) {
   .gallery {
     width: 282px;
-    height: 260px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 240px 10px 0 25px;
+    height: 2266px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 220px 19px 0 19px;
   }
 
   .card__photo {
@@ -57,27 +61,27 @@
   }
   .card__footer {
     width: 282px;
-    height: 60px;
+    height: 79px;
   }
 }
 
 @media screen and (min-width: 584px) and (max-width: 880px) {
   .gallery {
-    width: 220px;
-    height: 800px;
+    width: 280px;
+    height: 700px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    margin: 130px 0px 0 170px;
+    padding: 80px 0 0 10px;
   }
 
   .card__photo {
-    width: 220px;
-    height: 220px;
+    width: 280px;
+    height: 280px;
   }
   .card__footer {
-    width: 220px;
-    height: 59px;
+    width: 280px;
+    height: 70px;
   }
 }
