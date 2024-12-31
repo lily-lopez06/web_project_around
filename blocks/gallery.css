@@ -1,5 +1,5 @@
 .gallery {
-  width: 865px;
+  width: 880px;
   height: 743px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -45,6 +45,27 @@
   color: black;
 }
 
+@media screen and (min-width: 584px) and (max-width: 880px) {
+  .gallery {
+    width: 280px;
+    height: 1090px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 120px 0 0 5px;
+  }
+
+  .card__photo {
+    width: 280px;
+    height: 280px;
+  }
+  .card__footer {
+    width: 280px;
+    height: 70px;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 584px) {
   .gallery {
     width: 282px;
@@ -62,26 +83,5 @@
   .card__footer {
     width: 282px;
     height: 79px;
-  }
-}
-
-@media screen and (min-width: 584px) and (max-width: 880px) {
-  .gallery {
-    width: 280px;
-    height: 700px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    padding: 80px 0 0 10px;
-  }
-
-  .card__photo {
-    width: 280px;
-    height: 280px;
-  }
-  .card__footer {
-    width: 280px;
-    height: 70px;
   }
 }

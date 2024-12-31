@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const aboutInput = document.getElementById("aboutInput");
   const profileName = document.querySelector(".profile__name");
   const profileParagraph = document.querySelector(".profile__paragraph");
+  const likeButtons = document.querySelectorAll(".like-button");
 
   editProfileButton.addEventListener("click", () => {
     popup.classList.add("popup_opened");
@@ -17,12 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   closePopupButton.addEventListener("click", () => {
-    popup.classList.remove("popup_opened");
     popup.style.display = "none";
   });
 
   addProfileButton.addEventListener("click", () => {
-    popup.classList.add("popup_opened");
     popup.style.display = "block";
   });
 
@@ -40,21 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (about) {
-      document.querySelector("profile__paragraph").textContent = about;
+      document.querySelector(".profile__paragraph").textContent = about;
     }
 
-    popup.classList.remove("popup_opened");
+    popup.style.display = "none";
   });
-
-  popup.addEventListener("click", (event) => {
-    if (event.target === popup) {
-      popup.classList.remove("popup_opened");
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const likeButtons = document.querySelectorAll(".like-button");
 
   likeButtons.forEach((button) => {
     button.addEventListener("click", () => {

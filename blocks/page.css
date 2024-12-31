@@ -1,20 +1,21 @@
 .page {
-  width: 1280px;
+  max-width: 1280px;
   font-family: "inter-regular";
   background-color: black;
+  line-height: 1;
+  overflow: hidden;
   margin: auto;
-}
-
-@media screen and (min-width: 320px) and (max-width: 584px) {
-  .page {
-    width: 320px;
-    overflow: hidden;
-  }
 }
 
 @media screen and (min-width: 584px) and (max-width: 880px) {
   .page {
     max-width: 880px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 584px) {
+  .page {
+    width: 320px;
     overflow: hidden;
   }
 }
