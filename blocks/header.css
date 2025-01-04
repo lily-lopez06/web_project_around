@@ -14,7 +14,6 @@
   bottom: 1px;
   margin-top: 41px;
 }
-
 @media screen and (min-width: 584px) and (max-width: 880px) {
   .header {
     width: 320px;
@@ -26,7 +25,6 @@
     height: 70px;
   }
 }
-
 @media screen and (min-width: 320px) and (max-width: 584px) {
   .header {
     width: 320px;
