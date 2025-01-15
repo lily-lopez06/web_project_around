@@ -46,83 +46,14 @@
       </section>
 
       <main class="gallery" id="gallery">
-        <div class="card">
-          <img
-            src="./images/yosemite-min.jpg"
-            alt="valle-yosemite"
-            class="card__photo"
-          />
-          <div class="card__footer">
-            <span>Valle de Yosemite</span>
-            <button class="like-button">&#9825;</button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./images/lago-louise-min.jpg"
-            alt="lago-louise"
-            class="card__photo"
-          />
-          <div class="card__footer">
-            <span>Lago Louise</span>
-            <button class="like-button">&#9825;</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="./images/montañas-calvas-min.jpg"
-            alt="montañas-calvas"
-            class="card__photo"
-          />
-          <div class="card__footer">
-            <span>Montañas Calvas</span>
-            <button class="like-button">&#9825;</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="./images/latemar-min.jpg"
-            alt="latemar"
-            class="card__photo"
-          />
-          <div class="card__footer">
-            <span>Latemar</span>
-            <button class="like-button">&#9825;</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="./images/vanois-national-min.jpg"
-            alt="vanois-national"
-            class="card__photo"
-          />
-          <div class="card__footer">
-            <span>Vanois National...</span>
-            <button class="like-button" id="likeButton">&#9825;</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="./images/lago-di-braies-min.jpg"
-            alt="lago-di-braies"
-            class="card__photo"
-          />
-          <div class="card__footer">
-            <span>Lago di Braies</span>
-            <button class="like-button">&#9825;</button>
-          </div>
-        </div>
+        <div class="cards-container" id="cardsContainer"></div>
       </main>
 
       <footer class="footer">&copy; 2024 Around The U.S.</footer>
 
-      <div class="popup" id="popup">
+      <div class="popup" id="editPopup">
         <div class="popup__container">
-          <button class="popup__close" id="closePopup">
+          <button class="popup__close" id="closeEditPopup">
             <img
               src="./images/Close-Icon.svg"
               alt="close-icon"
@@ -137,6 +68,50 @@
             <img src="./images/Line-2.svg" alt="line" class="line" />
             <button type="button" id="saveProfile">Guardar</button>
           </form>
+        </div>
+      </div>
+
+      <div class="popup" id="addPopup">
+        <div class="popup__container">
+          <button class="popup__close" id="closeAddPopup">
+            <img
+              src="./images/Close-Icon.svg"
+              alt="close-icon"
+              class="popup__close-icon"
+            />
+          </button>
+          <h2 class="popup__title">Nuevo Lugar</h2>
+          <form class="popup__form" id="addCardForm">
+            <input type="text" id="cardNameInput" placeholder="Titulo" />
+            <img src="./images/Line-2.svg" alt="line" class="line" />
+            <input
+              type="url"
+              id="cardImageInput"
+              placeholder="Enlace a la imagen"
+              required
+            />
+            <img src="./images/Line-2.svg" alt="line" class="line" />
+            <button type="submit" id="submitAdd">Crear</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup" id="imagePopup">
+        <div class="popup__container-image">
+          <button class="popup__close-image" id="closeImagePopup">
+            <img
+              src="./images/Close-Icon.svg"
+              alt="close-icon"
+              class="popup__close-icon"
+            />
+          </button>
+          <img
+            src=""
+            alt="Imagen completa"
+            class="popup__image"
+            id="bigImage"
+          />
+          <p class="popup__image-title" id="imageTitle"></p>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
   max-width: 880px;
   max-height: 120px;
   padding: 40px 200px 50px 200px;
+  margin: auto;
 }
 
 .profile__photo {
@@ -115,6 +116,7 @@
     width: 282px;
     height: 282px;
     padding: 42px 19px 0 19px;
+    margin: auto;
   }
   .profile__photo {
     position: absolute;
