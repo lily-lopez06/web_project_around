@@ -18,7 +18,7 @@
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   left: 450px;
 }
 .popup__container-image {
@@ -70,7 +70,6 @@
   margin-left: 37px;
   font-family: "inter-black";
   font-size: 24px;
-  padding-top: 20px;
 }
 
 .popup__form {
@@ -88,16 +87,17 @@
   width: 358px;
   height: 27px;
   color: black;
+  margin-top: 10px;
 }
 
 .popup__form button {
   width: 358px;
   height: 50px;
-  margin-top: 40px;
   background-color: black;
   color: #c4c4c4;
   border: 1px solid #c4c4c4;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .popup__form button:hover {
@@ -107,7 +107,18 @@
 
 .line {
   width: 358px;
-  margin-top: -16px;
+  margin-top: -40px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+button:disabled {
+  background-color: #ccc; /* Botón inactivo */
+  color: #666;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width: 768px) and (max-width: 880px) {

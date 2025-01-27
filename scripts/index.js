@@ -14,11 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardImageInput = document.getElementById("cardImageInput");
   const cardsContainer = document.getElementById("cardsContainer");
   const addCardForm = document.getElementById("addCardForm");
+  const submitAddButton = document.getElementById("submitAdd");
 
   const imagePopup = document.getElementById("imagePopup");
   const bigImage = document.getElementById("bigImage");
   const closeImagePopupButton = document.getElementById("closeImagePopup");
   const imageTitle = document.getElementById("imageTitle");
+
+  const editProfileForm = document.getElementById("editProfileForm");
+  const nameError = document.getElementById("nameError");
+  const aboutError = document.getElementById("aboutError");
+
+  const cardNameError = document.createElement("span");
+  const cardImageError = document.createElement("span");
+
+  cardNameError.classList.add("error-message");
+  cardImageError.classList.add("error-message");
+  cardNameInput.insertAdjacentElement("afterend", cardNameError);
+  cardImageInput.insertAdjacentElement("afterend", cardImageError);
 
   const initialCards = [
     { name: "Valle de Yosemite", link: "./images/yosemite-min.jpg" },
@@ -132,6 +145,79 @@ document.addEventListener("DOMContentLoaded", () => {
       cardsContainer.appendChild(card);
       addPopup.classList.remove("popup_opened");
       addCardForm.reset();
+    }
+  });
+
+  // Función para verificar la validez de un campo
+  function checkInputValidity(inputElement, errorElement) {
+    if (!inputElement.validity.valid) {
+      errorElement.textContent = inputElement.validationMessage;
+    } else {
+      errorElement.textContent = "";
+    }
+  }
+
+  function toggleSaveButtonState() {
+    if (editProfileForm.checkValidity()) {
+      saveProfileButton.disabled = false;
+    } else {
+      saveProfileButton.disabled = true;
+    }
+  }
+
+  [nameInput, aboutInput].forEach((input) => {
+    input.addEventListener("input", () => {
+      const errorElement = input.id === "nameInput" ? nameError : aboutError;
+      checkInputValidity(input, errorElement);
+      toggleSaveButtonState();
+    });
+  });
+
+  // Validación al enviar el formulario
+  editProfileForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (editProfileForm.checkValidity()) {
+      profileName.textContent = nameInput.value.trim();
+      profileParagraph.textContent = aboutInput.value.trim();
+      editPopup.classList.remove("popup_opened");
+    }
+  });
+
+  function checkInputValidity(inputElement, errorElement) {
+    if (!inputElement.validity.valid) {
+      errorElement.textContent = inputElement.validationMessage;
+    } else {
+      errorElement.textContent = "";
+    }
+  }
+
+  function toggleButtonState(form, button) {
+    if (form.checkValidity()) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+  }
+
+  [cardNameInput, cardImageInput].forEach((input) => {
+    input.addEventListener("input", () => {
+      const errorElement =
+        input.id === "cardNameInput" ? cardNameError : cardImageError;
+      checkInputValidity(input, errorElement);
+      toggleButtonState(addCardForm, submitAddButton);
+    });
+  });
+
+  addCardForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (addCardForm.checkValidity()) {
+      const name = cardNameInput.value.trim();
+      const link = cardImageInput.value.trim();
+      const card = createCard(name, link);
+      cardsContainer.appendChild(card);
+      addPopup.classList.remove("popup_opened");
+      addCardForm.reset();
+      toggleButtonState(addCardForm, submitAddButton); // Reinicia el estado del botón
     }
   });
 });

@@ -61,10 +61,26 @@
             />
           </button>
           <h2 class="popup__title">Editar perfil</h2>
-          <form class="popup__form" id="editProfileForm">
-            <input type="text" id="nameInput" placeholder="Nombre" />
+          <form class="popup__form" id="editProfileForm" novalidate>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Nombre"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="error-message" id="nameError"></span>
             <img src="./images/Line-2.svg" alt="line" class="line" />
-            <input type="text" id="aboutInput" placeholder="Acerca de mí" />
+            <input
+              type="text"
+              id="aboutInput"
+              placeholder="Acerca de mí"
+              minlength="2"
+              maxlength="200"
+              required
+            />
+            <span class="error-message" id="aboutError"></span>
             <img src="./images/Line-2.svg" alt="line" class="line" />
             <button type="button" id="saveProfile">Guardar</button>
           </form>
@@ -81,8 +97,16 @@
             />
           </button>
           <h2 class="popup__title">Nuevo Lugar</h2>
-          <form class="popup__form" id="addCardForm">
-            <input type="text" id="cardNameInput" placeholder="Titulo" />
+          <form class="popup__form" id="addCardForm" novalidate>
+            <input
+              type="text"
+              id="cardNameInput"
+              placeholder="Titulo"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <span class="error-message" id="cardNameError"></span>
             <img src="./images/Line-2.svg" alt="line" class="line" />
             <input
               type="url"
@@ -90,6 +114,7 @@
               placeholder="Enlace a la imagen"
               required
             />
+            <span class="error-message" id="cardImageError"></span>
             <img src="./images/Line-2.svg" alt="line" class="line" />
             <button type="submit" id="submitAdd">Crear</button>
           </form>
