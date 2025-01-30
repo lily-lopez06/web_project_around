@@ -65,15 +65,17 @@
             <input
               type="text"
               id="nameInput"
+              class="popup__input"
               placeholder="Nombre"
               minlength="2"
               maxlength="40"
               required
             />
             <span class="error-message" id="nameError"></span>
-            <img src="./images/Line-2.svg" alt="line" class="line" />
+            <div class="line"></div>
             <input
               type="text"
+              class="popup__input"
               id="aboutInput"
               placeholder="Acerca de mí"
               minlength="2"
@@ -81,8 +83,10 @@
               required
             />
             <span class="error-message" id="aboutError"></span>
-            <img src="./images/Line-2.svg" alt="line" class="line" />
-            <button type="button" id="saveProfile">Guardar</button>
+            <div class="line"></div>
+            <button type="submit" id="saveProfile" class="popup__button">
+              Guardar
+            </button>
           </form>
         </div>
       </div>
@@ -101,22 +105,26 @@
             <input
               type="text"
               id="cardNameInput"
+              class="popup__input"
               placeholder="Titulo"
               minlength="2"
               maxlength="30"
               required
             />
             <span class="error-message" id="cardNameError"></span>
-            <img src="./images/Line-2.svg" alt="line" class="line" />
+            <div class="line"></div>
             <input
               type="url"
               id="cardImageInput"
+              class="popup__input"
               placeholder="Enlace a la imagen"
               required
             />
             <span class="error-message" id="cardImageError"></span>
-            <img src="./images/Line-2.svg" alt="line" class="line" />
-            <button type="submit" id="submitAdd">Crear</button>
+            <div class="line"></div>
+            <button type="submit" id="submitAdd" class="popup__button">
+              Crear
+            </button>
           </form>
         </div>
       </div>
@@ -140,6 +148,7 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/validate.js" type="module"></script>
+    <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
