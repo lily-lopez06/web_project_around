@@ -39,18 +39,30 @@
           alt="foto-de-perfil"
           class="profile__photo"
         />
-
         <button class="add-button" id="addProfile">
           <img src="./images/plus_icon.svg" alt="plus-icon" class="plus-icon" />
         </button>
       </section>
-
       <main class="gallery" id="gallery">
         <div class="cards-container" id="cardsContainer"></div>
       </main>
-
+      <template id="card-template">
+        <div class="card">
+          <img class="card__photo" alt="Imagen de la tarjeta" />
+          <div class="card__footer">
+            <h2 class="card__title"></h2>
+            <button class="card__like-button"></button>
+            <button class="card__delete-button">
+              <img
+                src="./images/icons8-delete.svg"
+                alt="delete-icon"
+                class="delete-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </template>
       <footer class="footer">&copy; 2024 Around The U.S.</footer>
-
       <div class="popup" id="editPopup">
         <div class="popup__container">
           <button class="popup__close" id="closeEditPopup">
@@ -60,7 +72,7 @@
               class="popup__close-icon"
             />
           </button>
-          <h2 class="popup__title">Editar perfil</h2>
+          <h2 class="popup__title">Editar Perfil</h2>
           <form class="popup__form" id="editProfileForm" novalidate>
             <input
               type="text"
@@ -71,26 +83,27 @@
               maxlength="40"
               required
             />
-            <span class="error-message" id="nameError"></span>
             <div class="line"></div>
+            <span class="popup__error" id="nameInput-error"></span>
+
             <input
               type="text"
-              class="popup__input"
               id="aboutInput"
+              class="popup__input"
               placeholder="Acerca de mí"
               minlength="2"
               maxlength="200"
               required
             />
-            <span class="error-message" id="aboutError"></span>
             <div class="line"></div>
+            <span class="popup__error" id="aboutInput-error"></span>
+
             <button type="submit" id="saveProfile" class="popup__button">
               Guardar
             </button>
           </form>
         </div>
       </div>
-
       <div class="popup" id="addPopup">
         <div class="popup__container">
           <button class="popup__close" id="closeAddPopup">
@@ -111,8 +124,9 @@
               maxlength="30"
               required
             />
-            <span class="error-message" id="cardNameError"></span>
             <div class="line"></div>
+            <span class="popup__error" id="cardNameInput-error"></span>
+
             <input
               type="url"
               id="cardImageInput"
@@ -120,15 +134,15 @@
               placeholder="Enlace a la imagen"
               required
             />
-            <span class="error-message" id="cardImageError"></span>
             <div class="line"></div>
+            <span class="popup__error" id="cardImageInput-error"></span>
+
             <button type="submit" id="submitAdd" class="popup__button">
               Crear
             </button>
           </form>
         </div>
       </div>
-
       <div class="popup" id="imagePopup">
         <div class="popup__container-image">
           <button class="popup__close-image" id="closeImagePopup">
@@ -139,7 +153,7 @@
             />
           </button>
           <img
-            src=""
+            src=" "
             alt="Imagen completa"
             class="popup__image"
             id="bigImage"
@@ -148,7 +162,9 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/validate.js" type="module"></script>
+    <script src="./scripts/utils.js" type="module"></script>
+    <script src="./scripts/Card.js" type="module"></script>
+    <script src="./scripts/FormValidator.js" type="module"></script>
     <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
