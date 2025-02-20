@@ -14,8 +14,8 @@
 }
 
 .popup__container {
-  width: 430px;
-  height: 330px;
+  width: 400px;
+  height: 300px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
@@ -59,7 +59,7 @@
   border: none;
   position: absolute;
   top: -40px;
-  left: 40px;
+  left: 5px;
   z-index: 10;
   cursor: pointer;
 }
@@ -68,7 +68,7 @@
   background-color: rgba(76, 74, 74, 0.753);
 }
 .popup__title {
-  margin-left: 37px;
+  margin-left: 25px;
   font-family: "inter-black";
   font-size: 24px;
 }
@@ -77,9 +77,9 @@
   display: flex;
   flex-direction: column;
   border: none;
-  margin: 24px 0 0 37px;
+  margin: 24px 0 0 25px;
   font-family: "inter-regular";
-  gap: 20px;
+  gap: 15px;
 }
 
 .popup__form input {
@@ -95,14 +95,14 @@
   width: 358px;
   height: 50px;
   background-color: black;
-  color: #c4c4c4;
   border: 1px solid #c4c4c4;
   cursor: pointer;
   margin-top: 10px;
+  color: #fff;
 }
 
 .popup__form button:hover {
-  background-color: #c4c4c4;
+  background-color: black;
   color: #fff;
 }
 
@@ -145,7 +145,7 @@ button:disabled {
     max-height: 280px;
     position: absolute;
     top: 280px;
-    left: -380px;
+    left: -230px;
   }
 }
 
@@ -153,12 +153,12 @@ button:disabled {
   .popup {
     max-width: 280px;
     position: absolute;
-    left: -432px;
+    left: -385px;
     top: 10px;
   }
 
   .popup__container {
-    width: 280px;
+    width: 250px;
     height: 322px;
   }
 
@@ -171,11 +171,11 @@ button:disabled {
   .popup__form input {
     width: 200px;
     font-size: 14px;
-    margin: 10px 30px 0 -20px;
+    margin: -5px 30px 0 -20px;
   }
 
   .popup__form input:hover {
-    color: black;
+    color: gray;
   }
 
   .popup__form button {
@@ -185,7 +185,7 @@ button:disabled {
   }
 
   .popup__form button:hover {
-    background-color: black;
+    background-color: rgb(187, 187, 187);
   }
 
   .line {
@@ -196,7 +196,8 @@ button:disabled {
   .popup__close {
     width: 26px;
     height: 26px;
-    margin: -25px 10px 10px 270px;
+    position: absolute;
+    left: -160px;
   }
 
   .popup__close-icon {

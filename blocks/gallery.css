@@ -45,12 +45,6 @@
   margin: 0;
 }
 
-.card__like-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 .card__delete-button {
   background: none;
   border: none;
@@ -59,17 +53,31 @@
   top: 10px;
   right: 10px;
 }
+.delete-icon {
+  width: 20px;
+}
 .delete-icon:hover {
   opacity: 0.5x;
 }
 
 .heart-icon {
   width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../images/heart-empty.svg");
+  background-size: cover;
 }
 
-.delete-icon {
-  width: 20px;
+.card__like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
+
+.card__like-button_active {
+  background-image: url("../images/heart-filled.svg");
+}
+
 @media screen and (min-width: 584px) and (max-width: 880px) {
   .cards-container {
     height: auto;

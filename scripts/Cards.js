@@ -32,6 +32,7 @@ class Card {
     this._element
       .querySelector(".card__like-button")
       .addEventListener("click", (evt) => {
+        console.log("Botón de like clickeado");
         evt.target.classList.toggle("card__like-button_active");
       });
   }
